@@ -1,36 +1,41 @@
-# RELAXER
-Relaxer is a front-end development starter with Bootstrap, Font-awesome, jQuery packages using Bower / Gulp.
+# RELAXER (QUICKLY GULP STARTER FOR FRONTEND DEVELOPMENT)
 
-# GENERAL INSTALLATIONS
+***Relaxer is a front-end development starter with Bootstrap, Font-awesome, jQuery packages using Bower / Gulp.***
 
+Clone repository your project;
+
+  git clone https://github.com/ugurakcil/relaxer.git yourprojectdirectoryname
+
+## GENERAL INSTALLATIONS
+  
 1) You'r need NodeJS and NPM package manager to run Bower;
 
-sudo apt install -y nodejs nodejs-legacy
-sudo apt-get install npm
+  sudo apt install -y nodejs nodejs-legacy
+  sudo apt-get install npm
 
 2) Now, we can install Bower&Gulp globally;
 
-npm install --global bower gulp
+  npm install --global bower gulp
 
-3) ..and Update
+3) ..and Update;
 
-npm update & bower update
+  npm update & bower update
 
-# PROJECT INSTALLATIONS
+## PROJECT INSTALLATIONS
 
-Go to /project/folder
+Go to ***/project/folder***
 
-1) Let's get dependencies;
+Let's get dependencies;
 
-npm install
-bower install
+  npm install
+  bower install
 
-# ERRORS
+## INSTALLATION ERRORS
 
-If you encounter an error, you can apply the following.
+If you encounter an error, you can apply the following;
 
-sudo su -c "gem install sass"
-gem install sass
+  sudo su -c "gem install sass"
+  gem install sass
 
-npm set registry http://r.cnpmjs.org/
-npm install --registry http://registry.npmjs.org/
+  npm set registry http://r.cnpmjs.org/
+  npm install --registry http://registry.npmjs.org/
