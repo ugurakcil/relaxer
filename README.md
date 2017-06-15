@@ -9,16 +9,16 @@ Clone repository your project;
 
 ## GENERAL INSTALLATIONS
   
-1) You'r need NodeJS and NPM package manager to run Bower;
+You'r need NodeJS and NPM package manager to run Bower;
 
     sudo apt install -y nodejs nodejs-legacy
     sudo apt-get install npm
 
-2) Now, we can install Bower&Gulp globally;
+Now, we can install Bower&Gulp globally;
 
     npm install --global bower gulp
 
-3) ..and Update;
+..and Update;
 
     npm update & bower update
 
