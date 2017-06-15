@@ -1,3 +1,7 @@
+### Eclipse ###
+.settings
+.project
+.buildpath
 
 ### Bower ###
 bower_components
@@ -64,7 +68,6 @@ typings/
 # dotenv environment variables file
 .env
 
-
 ### Sass ###
-.sass-cache/
+.sass-cache
 *.css.map
