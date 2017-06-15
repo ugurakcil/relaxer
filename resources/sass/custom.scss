@@ -1,0 +1,68 @@
+/*
+* Relaxer
+* You can change and delete this file to write the project custom styles.
+* You can use the Bootstrap variables and your defined custom variables on variables.scss here.
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+header.carousel {
+   height: 80%;
+   
+   .item,
+   .item.active,
+   .carousel-inner {
+       height: 100%;
+   }
+   
+   .fill {
+       width: 100%;
+       height: 100%;
+       background-position: center;
+       background-size: cover;
+   }
+}
+
+.nav {
+   > li {
+      margin: 0 15px;
+   }
+}
+
+.navbar-inverse {
+   
+   &:after {
+      content: ' ';
+      background-color: #FFF;
+      width:100%;
+      height:1px;
+      position:absolute;
+      bottom:2px;
+      z-index:10;
+   }
+}
+
+.navbar-nav {
+   > li {
+      &.active:after {
+       content: ' ';
+       background-color: $color1;
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       height: 4px;
+       z-index:15;
+      }
+      
+      > a{
+         font-size:15px;
+      }
+   }
+}
+
+.item-row-lg{
+   margin-bottom:30px;
+}

@@ -1,0 +1,47 @@
+{
+  "name": "relaxer",
+  "version": "1.0.0",
+  "description": "Relaxer is a frontend starter",
+  "main": "public/index.html",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugurakcil/relaxer.git"
+  },
+  "keywords": [
+    "frontend",
+    "starter",
+    "bootstrap",
+    "relaxer",
+    "development"
+  ],
+  "author": "Uğur AKÇIL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ugurakcil/relaxer/issues"
+  },
+  "homepage": "https://github.com/ugurakcil/relaxer#readme"
+}

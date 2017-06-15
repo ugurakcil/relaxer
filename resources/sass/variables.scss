@@ -1,0 +1,34 @@
+/*
+* Relaxer
+* You can change and delete this file to write the project custom variables.
+* You can define the Bootstrap variables here.
+*/
+
+$font-family-base: 'Raleway', sans-serif;
+
+$color1:       #AE2F24;
+
+
+$container-large-desktop:       950px;
+
+$border-radius-base:               0;
+
+$navbar-inverse-color:             #FFF;
+$navbar-inverse-bg:                rgba(#000, .5);
+$navbar-inverse-border:            #FFF;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 $navbar-inverse-color;
+$navbar-inverse-link-hover-color:           $color1;
+$navbar-inverse-link-hover-bg:              transparent;
+$navbar-inverse-link-active-bg:             transparent;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $navbar-inverse-link-color;
+$navbar-inverse-brand-hover-color:          #fff;
+$navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-border-color:        #B22200;
+
+$carousel-control-opacity:                  0;

@@ -1,0 +1,5 @@
+Relaxer
+Develop your frontend codes on the /resources directory.
+When developing the project, you can find sass or plain css files in the relevant directory.
+This system works with the bower-gulp mechanism.
+If you develop directly in the /public directory, your codes will be lost.
