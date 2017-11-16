@@ -15,9 +15,14 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "3.*.*",
     "jquery": "^3.2.1",
     "font-awesome": "fontawesome#^4.7.0",
     "bootstrap-sass": "bootstrap-sass-official#^3.3.7"
+  },
+  "devDependencies": {
+    "ekko-lightbox": "4.0.*",
+    "smartmenus": "1.0.1",
+    "matchHeight": "matchheight#^0.7.2"
   }
 }

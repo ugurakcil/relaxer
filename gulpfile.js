@@ -25,7 +25,7 @@ include('./gulpconfig.js');
 
 /* File processing tasks */
 
-gulp.task('sass', ['sass-clean'],  () => 
+gulp.task('sass', ['sass-clean'],  () =>
    sass(path.sass + 'main.scss', {
       style: 'compressed',
       loadPath: sassFiles
@@ -37,6 +37,18 @@ gulp.task('sass', ['sass-clean'],  () =>
    }))
    .on('error', sass.logError) 
    .pipe(gulp.dest(path.resourcesCss))
+);
+
+gulp.task('sass-tmp',  () =>
+   sass(path.sass + 'main.scss', {
+      loadPath: sassFiles
+   })
+   .pipe(rename({
+      suffix: ".tmp",
+      extname: ".css"
+   }))
+   .on('error', sass.logError) 
+   .pipe(gulp.dest(path.resourcesTmp))
 );
 
 gulp.task('fonts', function(){
@@ -75,8 +87,26 @@ gulp.task('scripts', function(){
       .pipe(gulp.dest(path.script)); 
 });
 
-gulp.task('watch', function () {
-   gulp.watch(path.sass + '**/*',  ['styles']);
+gulp.task('watch', ['watch-sass', 'watch-scripts'], function(){ });
+
+gulp.task('watch-sass', function () {
+    gulp.watch(path.sass + '**/*',  ['styles'])
+    .on('end', function () {
+        notify("Relaxer | Sass files operations were done, baby <3").write('');
+    })
+    .on('error', function(err) {
+        notify(err);
+    });
+});
+
+gulp.task('watch-scripts', function () {
+    gulp.watch(scriptFiles,  ['scripts'])
+    .on('end', function () {
+        notify("Relaxer | Script files operations were done, sweety <3").write('');
+    })
+    .on('error', function(err) {
+        notify(err);
+    });
 });
 
 gulp.task('images', function() {
@@ -89,19 +119,17 @@ gulp.task('sass-clean', function(){
    del([path.css + '**.*', path.resourcesCss + 'main.css']).then(paths => {
       console.log('Deleted files:\n', paths.join('\n'));
    });
-   
-   cache.clearAll();
 });
 
 gulp.task('deep-clean', ['saas-clean'], function(){
    del([path.font + '**.*', path.script + '**.*', path.images + '**/*']).then(paths => {
       console.log('Deleted files:\n', paths.join('\n'));
    });
-   
+
    cache.clearAll();
 });
 
-gulp.task('default',['fonts', 'sass', 'scripts', 'styles', 'images'], function() {
+gulp.task('default',['fonts', 'scripts', 'styles', 'images'], function() {
    return gulp.src(assetsPath)
-      .pipe(notify({ message: 'Relaxer is now completed buddy <3' }));
+      .pipe(notify({ message: 'Relaxer | All fucking resources files operations were done <3' }));
 });
